@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Siem Reap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="style" href="../assets/built/screen.css%3Fv=16ea9adc86.css">
+    <link rel="preload" as="script" href="../assets/built/source.js%3Fv=16ea9adc86">
+    
+    <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/inter-roman.woff2%3Fv=16ea9adc86" crossorigin="anonymous">
+<style>
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url(../assets/fonts/inter-roman.woff2%3Fv=16ea9adc86) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css%3Fv=16ea9adc86.css">
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast has been taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+
+        if (accentColor.length === 3) {
+            accentColor = accentColor[0] + accentColor[0] + accentColor[1] + accentColor[1] + accentColor[2] + accentColor[2];
+        }
+
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <link rel="icon" href="../content/images/size/w256h256/2025/06/favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Abandonism">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Siem Reap">
+    <meta property="og:description" content="Cambodia, and more specifically Angkor Wat, had been on my bucket list for quite some time. I’m not too sure why we didn’t get there earlier but I’m certainly glad we have been there now.
+
+Cambodia is an amazing country. From the history and monuments, to the">
+    <meta property="og:url" content="http://localhost:2368/siem-reap/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2025/06/_MG_5628-1.jpg">
+    <meta property="article:published_time" content="2019-12-19T00:00:00.000Z">
+    <meta property="article:modified_time" content="2025-06-01T05:30:23.000Z">
+    <meta property="article:tag" content="Cambodia">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Siem Reap">
+    <meta name="twitter:description" content="Cambodia, and more specifically Angkor Wat, had been on my bucket list for quite some time. I’m not too sure why we didn’t get there earlier but I’m certainly glad we have been there now.
+
+Cambodia is an amazing country. From the history and monuments, to the">
+    <meta name="twitter:url" content="http://localhost:2368/siem-reap/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2025/06/_MG_5628-1.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Abandonism">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Cambodia">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="1500">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Abandonism",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/size/w256h256/2025/06/favicon.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Abandonism",
+        "url": "http://localhost:2368/author/abandonism/",
+        "sameAs": []
+    },
+    "headline": "Siem Reap",
+    "url": "http://localhost:2368/siem-reap/",
+    "datePublished": "2019-12-19T00:00:00.000Z",
+    "dateModified": "2025-06-01T05:30:23.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2025/06/_MG_5628-1.jpg",
+        "width": 1000,
+        "height": 1500
+    },
+    "keywords": "Cambodia",
+    "description": "Cambodia, and more specifically Angkor Wat, had been on my bucket list for quite some time. I’m not too sure why we didn’t get there earlier but I’m certainly glad we have been there now.\n\nCambodia is an amazing country. From the history and monuments, to the food, culture and people, everything delivered above our expectations.\n\nWe had just over a week to squeeze in as much as possible so focused our visit on SIem Reap and Phnom Pehn, with the majority of our time in Siem Reap and surrounds (se",
+    "mainEntityOfPage": "http://localhost:2368/siem-reap/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.107">
+    <link rel="alternate" type="application/rss+xml" title="Abandonism" href="../rss/index.html">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="1117c17940e830e59188f1b078" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="http://localhost:2368/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="http://localhost:2368/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=16ea9adc86"></script><style>:root {--ghost-accent-color: #FF1A75;}</style>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=16ea9adc86.css">
+    <style>
+.gh-article-image {
+    display: none;
+}
+</style>
+
+</head>
+<body class="post-template tag-cambodia has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+    
+    <header id="gh-navigation" class="gh-navigation is-stacked gh-outer">
+    <div class="gh-navigation-inner gh-inner">
+
+        <div class="gh-navigation-brand">
+            <a class="gh-navigation-logo is-title" href="../index.html">
+                    Abandonism
+            </a>
+            <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>            <button class="gh-burger gh-icon-button" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>            </button>
+        </div>
+
+        <nav class="gh-navigation-menu">
+            <ul class="nav">
+    <li class="nav-home"><a href="../index.html">Home</a></li>
+    <li class="nav-our-story"><a href="../about/index.html">Our Story</a></li>
+    <li class="nav-our-inspiration"><a href="../inspiration/index.html">Our Inspiration</a></li>
+    <li class="nav-abandonism"><a href="http://localhost:2368/abandonism/">Abandonism</a></li>
+    <li class="nav-vehicles"><a href="../tag/vehicle/index.html">Vehicles</a></li>
+</ul>
+
+                    <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>        </nav>
+
+        <div class="gh-navigation-actions">
+        </div>
+
+    </div>
+</header>
+
+    
+
+<main class="gh-main">
+
+    <article class="gh-article post tag-cambodia">
+
+        <header class="gh-article-header gh-canvas">
+
+                <a class="gh-article-tag" href="../tag/cambodia/index.html">Cambodia</a>
+            <h1 class="gh-article-title is-title">Siem Reap</h1>
+
+            <div class="gh-article-meta">
+                <div class="gh-article-author-image instapaper_ignore">
+                            <a href="../author/abandonism/index.html"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+</a>
+                </div>
+                <div class="gh-article-meta-wrapper">
+                    <h4 class="gh-article-author-name"><a href="../author/abandonism/index.html">Abandonism</a></h4>
+                    <div class="gh-article-meta-content">
+                        <time class="gh-article-meta-date" datetime="2019-12-19">19 Dec 2019</time>
+                            <span class="gh-article-meta-length"><span class="bull">—</span> 11 min read</span>
+                    </div>
+                </div>
+            </div>
+
+                <figure class="gh-article-image">
+        <img
+            srcset="../content/images/size/w320/2025/06/_MG_5628-1.jpg 320w,
+                   ../content/images/size/w600/2025/06/_MG_5628-1.jpg 600w,
+                  ../content/images/size/w960/2025/06/_MG_5628-1.jpg 960w,
+                 ../content/images/size/w1200/2025/06/_MG_5628-1.jpg 1200w,
+                ../content/images/size/w2000/2025/06/_MG_5628-1.jpg 2000w"
+            sizes="(max-width: 1200px) 100vw, 1120px"
+            src="../content/images/size/w1200/2025/06/_MG_5628-1.jpg"
+            alt="Siem Reap"
+        >
+    </figure>
+
+        </header>
+
+        <section class="gh-content gh-canvas is-body">
+            <p>Cambodia, and more specifically Angkor Wat, had been on my bucket list for quite some time. I’m not too sure why we didn’t get there earlier but I’m certainly glad we have been there now.</p><p>Cambodia is an amazing country. From the history and monuments, to the food, culture and people, everything delivered above our expectations.</p><p>We had just over a week to squeeze in as much as possible so focused our visit on SIem Reap and <a href="https://www.abandonism.com/blog/phnom-penh?ref=localhost">Phnom Pehn</a>, with the majority of our time in Siem Reap and surrounds (see our full itinerary further <a href="https://www.abandonism.com/blog/siemreap?ref=localhost#cambodia_itinerary">below</a>).</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_1073-1.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1000" srcset="../content/images/size/w600/2025/06/IMG_1073-1.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1073-1.jpg 1000w, ../content/images/2025/06/IMG_1073-1.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_1273.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1000" srcset="../content/images/size/w600/2025/06/IMG_1273.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1273.jpg 1000w, ../content/images/2025/06/IMG_1273.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/_MG_5660.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1000" srcset="../content/images/size/w600/2025/06/_MG_5660.jpg 600w, ../content/images/size/w1000/2025/06/_MG_5660.jpg 1000w, ../content/images/2025/06/_MG_5660.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><h2 id="where-we-stayed">WHERE WE STAYED</h2><p>We stayed at a fairly new hotel called Blanc Smith. </p><p>The hotel is about a 5 minute walk to the main areas of Siem Reap such as Pub Street. The location was perfect because although we were in a quieter area (good for sleep) there were still plenty of food options and amenities near by and the party area was still really close. Siem Reap is not a very big town and felt perfectly safe to walk around at night.</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_1444.jpg" class="kg-image" alt="" loading="lazy" width="1000" height="1500" srcset="../content/images/size/w600/2025/06/IMG_1444.jpg 600w, ../content/images/2025/06/IMG_1444.jpg 1000w" sizes="(min-width: 720px) 720px"></figure><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20191031_194011.jpg" width="1500" height="1125" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20191031_194011.jpg 600w, ../content/images/size/w1000/2025/06/IMG_20191031_194011.jpg 1000w, ../content/images/2025/06/IMG_20191031_194011.jpg 1500w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20191101_175042.jpg" width="1125" height="1500" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20191101_175042.jpg 600w, ../content/images/size/w1000/2025/06/IMG_20191101_175042.jpg 1000w, ../content/images/2025/06/IMG_20191101_175042.jpg 1125w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>We paid approximately 65AUD p/n without breakfast but the hotel did offer complimentary shuttles to/from the airport. It also has a good value cafe downstairs - Coffee Today- so breakfast and coffee wasn’t far (although we did tend to venture out most days).</p><p>The hotel was super clean and also had a reasonable size pool for a quick dip.</p><h2 id="how-we-got-around">HOW WE GOT AROUND</h2><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_1339.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1000" srcset="../content/images/size/w600/2025/06/IMG_1339.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1339.jpg 1000w, ../content/images/2025/06/IMG_1339.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><p>Our hotel helped us a lot initially with working out a good itinerary for the Angkor Archeological Park, as well as a visit to the floating village of  Kompong Phluk. They also helped with organising transport which was a motor taxi with the loveliest driver.</p><p>I think we may have paid a little over the going rate at the equivalent of 30AUD per day - in general expect to pay 20-25AUD. For us the cost was worth it to have someone who was tied to the hotel, super reliable and a little bit flexible.</p><h2 id="where-we-ate-and-drank">WHERE WE ATE AND DRANK</h2><p>There is no shortage of places to eat or drink in Siem Reap. Actually the most difficult part is getting to as many as possible, there are so many fun and tasty options.</p><p>As noted above, we did have a cafe in our hotel however we found coffee more suited our tastes at <a href="https://m.facebook.com/Fifty5-Kitchen-Bar-1653272741664957/?locale2=ja_JP&ref=localhost">Fifty 5 Kitchen Bar</a> (illy coffee) and <a href="http://www.sistersreycafe.com/?ref=localhost">Sister Srey Cafe</a>. Both of these cafes also served incredible breakfasts, so good that I forgot to get photos of our food, only have photos of the coffee.</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20191101_092435.jpg" width="1026" height="1026" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20191101_092435.jpg 600w, ../content/images/size/w1000/2025/06/IMG_20191101_092435.jpg 1000w, ../content/images/2025/06/IMG_20191101_092435.jpg 1026w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20191031_202542.jpg" width="1125" height="1125" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20191031_202542.jpg 600w, ../content/images/size/w1000/2025/06/IMG_20191031_202542.jpg 1000w, ../content/images/2025/06/IMG_20191031_202542.jpg 1125w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20191104_184716.jpg" width="888" height="888" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20191104_184716.jpg 600w, ../content/images/2025/06/IMG_20191104_184716.jpg 888w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>We ate local food at a few different places including the <a href="https://www.khmerkitchens.com/?ref=localhost">Khmer Kitchen</a> (food pictured below) and <a href="http://www.thebrotherscambodia.com/?ref=localhost">The Brothers</a> ( including The Brothers Plus). Actually we ate at the later a couple of times as they were also close to our hotel. </p><p>For a change from Cambodian food we ate burgers at <a href="https://www.jungleburgersiemreap.com/?ref=localhost">Jungle Burger Sports Bar and Bistro</a> and had really good Italian food at a hidden away restaurant called <a href="https://ilforno.restaurant/siem-reap/?ref=localhost">Il Forno</a>.</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20191104_195748.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1125" srcset="../content/images/size/w600/2025/06/IMG_20191104_195748.jpg 600w, ../content/images/size/w1000/2025/06/IMG_20191104_195748.jpg 1000w, ../content/images/2025/06/IMG_20191104_195748.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><p>As for drinks, I lost track of all of the places we stopped by at for a quick beer. <a href="http://www.thebrotherscambodia.com/?ref=localhost">The Brothers</a> offered 50 cent beers and we certainly took advantage of that on our arrival night. Then pretty much a pub and bar crawl over the following days up and around Pub Street. One place that did stand out and a little away from the main area was Temple Skylounge.  </p><p>Temple Skylounge has a mixture of businesses in the complex including a bakery (ground floor), restaurant and then a rooftop bar. The view is of the town is great and the cocktails were impressive. We were there pretty early in the evening but it looked like it might get pretty party later in the night (Note: Do not confuse this Temple bar with the Temple Nightclub in Pub Street).</p><h2 id="what-we-did">WHAT WE DID</h2><h3 id="siem-reap-town-including-pub-street">SIEM REAP TOWN (INCLUDING PUB STREET)</h3><p>We generally like to start our time in a new location getting a feel for the place and just walking around, which is what we did in Siem Reap.</p><p>The main tourist area is pretty laid back during the day and becomes party at night. We checked out the little lane ways in the main tourist area, visited the old market, walked along the river up to the Royal Residence and Preah Ang Chorm Shrine and basically just took in the town.</p><p>Pub Street is blocked off to traffic at night which is great for the hoards of people eating, drinking and having fun at one of the many bars, clubs and restaurants along the strip. The area felt very safe although as with any poorer country we did spot homeless people and children selling goods way past their bed time.</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/2020-05-15.jpg" class="kg-image" alt="" loading="lazy" width="2000" height="1500" srcset="../content/images/size/w600/2025/06/2020-05-15.jpg 600w, ../content/images/size/w1000/2025/06/2020-05-15.jpg 1000w, ../content/images/size/w1600/2025/06/2020-05-15.jpg 1600w, ../content/images/size/w2400/2025/06/2020-05-15.jpg 2400w" sizes="(min-width: 720px) 720px"></figure><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_0996.jpg" width="1000" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_0996.jpg 600w, ../content/images/2025/06/IMG_0996.jpg 1000w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1421.jpg" width="999" height="999" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1421.jpg 600w, ../content/images/2025/06/IMG_1421.jpg 999w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1425.jpg" width="999" height="999" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1425.jpg 600w, ../content/images/2025/06/IMG_1425.jpg 999w" sizes="(min-width: 720px) 720px"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1439.jpg" width="1000" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1439.jpg 600w, ../content/images/2025/06/IMG_1439.jpg 1000w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1433.jpg" width="1500" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1433.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1433.jpg 1000w, ../content/images/2025/06/IMG_1433.jpg 1500w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1435.jpg" width="1500" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1435.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1435.jpg 1000w, ../content/images/2025/06/IMG_1435.jpg 1500w" sizes="(min-width: 720px) 720px"></div></div></div></figure><h3 id="angkor-archeological-park">ANGKOR ARCHEOLOGICAL PARK</h3><p>First thing first. There are a few ticket options for visiting Angkor Wat, so choose according to how much time you want to spend there. Passes are sold in one-day (37USD), three-day (62USD) and seven-day (72USD) blocks that <u>must be used on consecutive days</u>. Passes are also specific to you and a photo is taken on the spot to attach at the time of purchase. We did a 3 day pass which worked well for the time we were there and gave us more than enough time to see what we wanted to see. Before leaving I read blogs with people spending a week or more there and travelling to some of the further out temples - that was not for us. By day 3 we were a little ‘templed out’, as much as we loved the temples because they are pretty awesome.</p><p>Also, the ticket office is a 15 min drive away from the Angkor Wat main gate, so make sure you or your driver remember to stop there first before heading to the main site.</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/_MG_5628.jpg" class="kg-image" alt="" loading="lazy" width="1000" height="1500" srcset="../content/images/size/w600/2025/06/_MG_5628.jpg 600w, ../content/images/2025/06/_MG_5628.jpg 1000w" sizes="(min-width: 720px) 720px"></figure><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/_MG_5632.jpg" width="999" height="999" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/_MG_5632.jpg 600w, ../content/images/2025/06/_MG_5632.jpg 999w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1181.jpg" width="999" height="999" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1181.jpg 600w, ../content/images/2025/06/IMG_1181.jpg 999w" sizes="(min-width: 720px) 720px"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1103.jpg" width="999" height="999" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1103.jpg 600w, ../content/images/2025/06/IMG_1103.jpg 999w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1303.jpg" width="999" height="999" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1303.jpg 600w, ../content/images/2025/06/IMG_1303.jpg 999w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>Angkor Archeological Park has two main circuits that people generally stick to - The Small Circuit which consists of Angkor Wat and Angkor Thom, plus the Ta Prohm (Aka. the Tomb Raider temple) and a few others. Then there is the Grand Circuit which covers some of the further away temples. If you are there for only a day then the Small Circuit is definitely your best option. Start with the main two sites and choose from the rest based on time. If you have 2-3 days then you will have more than enough time to cover the Grand Circuit and maybe a coupe of others outside of it, like we did.</p><p>Going in our plan was to complete the Small Circuit on day one, sunrise at Angkor Wat Temple followed by the remaining temples in the Grand Circuit day two and a couple on the way to visit a floating village on day three. Mostly we stuck to this plan except that on day one we ran out of time for some of the temples on the Small Circuit so had to push them to day two, and our sunrise at Angkor Wat was a bit of a disaster.</p><p>#sunrisefail</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1210.jpg" width="1500" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1210.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1210.jpg 1000w, ../content/images/2025/06/IMG_1210.jpg 1500w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1219.jpg" width="1500" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1219.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1219.jpg 1000w, ../content/images/2025/06/IMG_1219.jpg 1500w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>The sunrise at Angkor Wat on day two was a non-event with foggy conditions and obviously, no sun. Disappointing (especially given the early morning 4:00am start) but still a nice experience. Also note that you do want to get there as early as possible because there are some serious crowds and we almost missed out on a waterside spot.</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1059.jpg" width="1000" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1059.jpg 600w, ../content/images/2025/06/IMG_1059.jpg 1000w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1304.jpg" width="1000" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1304.jpg 600w, ../content/images/2025/06/IMG_1304.jpg 1000w" sizes="(min-width: 720px) 720px"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1031.jpg" width="891" height="891" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1031.jpg 600w, ../content/images/2025/06/IMG_1031.jpg 891w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1030.jpg" width="1500" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1030.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1030.jpg 1000w, ../content/images/2025/06/IMG_1030.jpg 1500w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>The temples across the the Angkor Archeological Park were built in different eras and represent different beliefs, generally Hinduism and Buddhism. Also noteworthy is that while many people use  ‘Angkor Wat’ to refer to the entire site, ‘Angkor Wat’ itself is a single temple, the main temple and starting site. For further background on the history of the temples, as well as tourist information for the site, refer to the <a href="https://www.tourismcambodia.com/attractions/angkor.htm?ref=localhost">Tourism of Cambodia website</a>, a really helpful reference that appears to be kept up to date.</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/_MG_5624.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1000" srcset="../content/images/size/w600/2025/06/_MG_5624.jpg 600w, ../content/images/size/w1000/2025/06/_MG_5624.jpg 1000w, ../content/images/2025/06/_MG_5624.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><p>On day three, on our way to Kompong Phluk (see below), we also visited a couple of temples further outside Siem Reap, referred to as the Roluos Group. There are 4 temples of which we made it to two. We had planned to do the others on the way back but a sudden downpour changed those plans.</p><p>The two we did go to were Preah Ko (pictured below) and Bakong, both 9th Century Hindu temples.</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1334.jpg" width="1500" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1334.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1334.jpg 1000w, ../content/images/2025/06/IMG_1334.jpg 1500w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1330.jpg" width="1500" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1330.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1330.jpg 1000w, ../content/images/2025/06/IMG_1330.jpg 1500w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>In regards to our favourites over the three days, mine was actually the site of Angkor Thom and in particular the Bayon Temple (i.e. the temple with the large Buddha faces). A bit cliche perhaps but it really was an amazing site and temple.</p><p>Mike rated Preah Khan as his favourite, an expansive ruins where you can wonder the jungle covered walls and (almost) get lost.</p><p></p><h3 id="kampong-phluk-floating-village">KAMPONG PHLUK FLOATING VILLAGE</h3><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_1403.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1000" srcset="../content/images/size/w600/2025/06/IMG_1403.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1403.jpg 1000w, ../content/images/2025/06/IMG_1403.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><p><a href="https://floatingvillagetours.com/blog/kompong-phluk/?ref=localhost">Kompong Phluk</a> is located 16km southeast from Siem Reap as the crow flies but takes about 45mins when traveling by road (if you don’t stop along the way like we did).</p><p>A bit like the Angkor Wat sites, the ticket office is before the village and you need to purchase your ticket prior to arriving at the boat pick up. This boat ticket cost us 20USD per person and the return trip is meant to last about one hour (ours went for longer).  </p><p>The main boat stops at a mangrove forest (the largest mangrove forest of the Siem Reap floating villages) and you can jump on an optional canoe that goes through the flooded forest. The boat ticket costs USD 5 per person, and the ride lasts about 20 – 30 minute. The canoe option is part of a rowing boat cooperative. </p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1395.jpg" width="1000" height="1000" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1395.jpg 600w, ../content/images/2025/06/IMG_1395.jpg 1000w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_1388.jpg" width="852" height="852" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_1388.jpg 600w, ../content/images/2025/06/IMG_1388.jpg 852w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>We chose not to do the second boat but probably should have given we ended up having to wait for a third person on our main boat to complete her ride. Tip: If you are forced to share your main boat with another person(s), make sure you have all agreed on doing or not doing the second boat. We got sucked into sharing our boat (the boats are attached to a party of people) not realising it meant waiting around half an hour for a different itinerary. </p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_1377.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1000" srcset="../content/images/size/w600/2025/06/IMG_1377.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1377.jpg 1000w, ../content/images/2025/06/IMG_1377.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><p>Seeing the floating village was pretty interesting, although at times it felt weird looking into strangers’ homes. We saw people going about their day to day lives doing things such as washing hair over a basin, cooking, doing laundry, etc. It’s worth seeing but again, just be clear on what you want to do with your boat driver and definitely try and include it with other activities (such as seeing temples) on the way there.</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20191103_122726.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1125" srcset="../content/images/size/w600/2025/06/IMG_20191103_122726.jpg 600w, ../content/images/size/w1000/2025/06/IMG_20191103_122726.jpg 1000w, ../content/images/2025/06/IMG_20191103_122726.jpg 1500w" sizes="(min-width: 720px) 720px"></figure><p>We loved our time in Siem Reap and were sad to leave it. Fortunately we still had <a href="https://www.abandonism.com/blog/phnom-penh?ref=localhost">Phnom Penh</a> to look forward to.</p><p></p><h2 id="cambodia-itinerary">CAMBODIA ITINERARY</h2><p>It’s not often we travel to a place or country and leave feeling like overall, we pretty much got the itinerary and timings right. Cambodia was the first in a long time where we left feeling like had seen most of what we wanted to. That said, there’s always more to see and we would definitely love to make a return visit to Cambodia in the future! There’s so much history, culture, delicious food and the Cambodian people are such lovely people .</p><h3 id="our-itinerary">OUR ITINERARY:</h3><p><strong>Day 1 -</strong> We flew into Siem Reap via Bangkok from Sydney. We arrived in the evening, checked into our hotel before a late dinner and beers.</p><p><strong>Day  2 -</strong> We could have scheduled Angkor Wat to start this day but instead we opted to check out the town of Siem Reap. We like to do this to get a feel for the place we are staying before jumping straight into ‘tourist’ type activities.</p><p><strong>Day 3 &amp; 4 -</strong> Explore Angkor Archaeological Park. We started with the Angkor Wat Temple and then Angkor Thom on the first day, moving around the Angkor ‘Small Circuit’. On the second morning (day 4) we began with sunrise at Angkor Wat Temple and then moved our explorations to the ‘Grand Circuit’.</p><p><strong>Day 5 - </strong>This day we visited a couple more temples, Preah Koh and the Bakong Temples, on the way to visit the floating village Kompong Phluk. </p><p><strong>Day 6 -</strong> Morning transfer from Siem Reap to <a href="https://www.abandonism.com/blog/phnom-penh?ref=localhost">Phnom Penh</a>. Afternoon exploring the Phnom Penh  historic district.</p><p><strong>Day 7 -</strong> Explore Phnom Penh City.</p><p><strong>Day 8 -</strong> Half day visit to Killing Fields of Choeung Ek and Tuol Sleng Genocide Museum. Free afternoon for further exploration.</p><p><strong>Day 9 </strong>- Fly out of Phnom Penh airport.</p><h3 id="what-would-we-if-we-had-more-time">WHAT WOULD WE IF WE HAD MORE TIME:</h3><ul><li>Sihanoukville Beach and the southern coast - We were keen to explore the beach town and nearby islands and would do this in any future trip to Cambodia. We had a couple of days we could have added but felt we actually probably wanted more like 3-4 days.</li><li>Battambang - Cambodia’s second largest city and from our research has plenty to see and do if you have a couple of extra days. The local culture, countryside, temples and French architecture are all noteworthy.</li><li>A Cambodian food cooking class (next time for sure!).<br></li></ul><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_1073-2.jpg" class="kg-image" alt="" loading="lazy" width="1500" height="1000" srcset="../content/images/size/w600/2025/06/IMG_1073-2.jpg 600w, ../content/images/size/w1000/2025/06/IMG_1073-2.jpg 1000w, ../content/images/2025/06/IMG_1073-2.jpg 1500w" sizes="(min-width: 720px) 720px"></figure>
+        </section>
+
+    </article>
+
+
+</main>
+
+
+            <section class="gh-container is-grid gh-outer">
+                <div class="gh-container-inner gh-inner">
+                    <h2 class="gh-container-title">Read more</h2>
+                    <div class="gh-feed">
+                            <article class="gh-card post featured">
+    <a class="gh-card-link" href="../egypt/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="../content/images/size/w160/format/webp/2025/05/_MG_5768-1.jpg 160w,
+                           ../content/images/size/w320/format/webp/2025/05/_MG_5768-1.jpg 320w,
+                          ../content/images/size/w600/format/webp/2025/05/_MG_5768-1.jpg 600w,
+                         ../content/images/size/w960/format/webp/2025/05/_MG_5768-1.jpg 960w,
+                        ../content/images/size/w1200/format/webp/2025/05/_MG_5768-1.jpg 1200w,
+                       ../content/images/size/w2000/format/webp/2025/05/_MG_5768-1.jpg 2000w"
+                    sizes="320px"
+                    src="../content/images/size/w600/2025/05/_MG_5768-1.jpg"
+                    alt="Egypt"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Egypt</h3>
+                    <p class="gh-card-excerpt is-body">I know I refer to a lot of places we visit as being ‘on the list’. But if we were to talk true bucket list destinations then Egypt has to have been at the top of that list.
+
+About 3-4 years ago we looked at Egypt and seriously considered going,</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-04-12">12 Apr 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../central-australia-road-trip-pt-2-alice-springs-the-long-trip-home/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="../content/images/size/w160/format/webp/2025/06/IMG_2118-1.jpg 160w,
+                           ../content/images/size/w320/format/webp/2025/06/IMG_2118-1.jpg 320w,
+                          ../content/images/size/w600/format/webp/2025/06/IMG_2118-1.jpg 600w,
+                         ../content/images/size/w960/format/webp/2025/06/IMG_2118-1.jpg 960w,
+                        ../content/images/size/w1200/format/webp/2025/06/IMG_2118-1.jpg 1200w,
+                       ../content/images/size/w2000/format/webp/2025/06/IMG_2118-1.jpg 2000w"
+                    sizes="320px"
+                    src="../content/images/size/w600/2025/06/IMG_2118-1.jpg"
+                    alt="Central Australia Road Trip (Pt.2): Alice Springs &amp; the long trip home"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Central Australia Road Trip (Pt.2): Alice Springs &amp; the long trip home</h3>
+                    <p class="gh-card-excerpt is-body">As alluded to in part one of our Central Australia trip post, the second half of our drive underwent a major change. Our original itinerary had us heading to Alice Springs and then further north before turning back east on a scenic journey back to Sydney. However a combination of</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-02-01">01 Feb 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../central-australia-road-trip-pt-1-broken-hill-coober-pedy-uluru/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="../content/images/size/w160/format/webp/2025/06/IMG_1971-1.jpg 160w,
+                           ../content/images/size/w320/format/webp/2025/06/IMG_1971-1.jpg 320w,
+                          ../content/images/size/w600/format/webp/2025/06/IMG_1971-1.jpg 600w,
+                         ../content/images/size/w960/format/webp/2025/06/IMG_1971-1.jpg 960w,
+                        ../content/images/size/w1200/format/webp/2025/06/IMG_1971-1.jpg 1200w,
+                       ../content/images/size/w2000/format/webp/2025/06/IMG_1971-1.jpg 2000w"
+                    sizes="320px"
+                    src="../content/images/size/w600/2025/06/IMG_1971-1.jpg"
+                    alt="Central Australia Road Trip (Pt.1): Broken Hill, Coober Pedy &amp; Uluru"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Central Australia Road Trip (Pt.1): Broken Hill, Coober Pedy &amp; Uluru</h3>
+                    <p class="gh-card-excerpt is-body">Central Australia is a trip we had talked about forever and the purchase of Fran made us all the more eager to get out there and explore it.
+
+Normally we spend our Christmas and New Year in Melbourne with family and friends however with forced leave from work we decided</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-02-01">01 Feb 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../ten-things-to-do-in-singapore/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="../content/images/size/w160/format/webp/2025/06/IMG_1526-2.jpg 160w,
+                           ../content/images/size/w320/format/webp/2025/06/IMG_1526-2.jpg 320w,
+                          ../content/images/size/w600/format/webp/2025/06/IMG_1526-2.jpg 600w,
+                         ../content/images/size/w960/format/webp/2025/06/IMG_1526-2.jpg 960w,
+                        ../content/images/size/w1200/format/webp/2025/06/IMG_1526-2.jpg 1200w,
+                       ../content/images/size/w2000/format/webp/2025/06/IMG_1526-2.jpg 2000w"
+                    sizes="320px"
+                    src="../content/images/size/w600/2025/06/IMG_1526-2.jpg"
+                    alt="Ten things to do in Singapore"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Ten things to do in Singapore</h3>
+                    <p class="gh-card-excerpt is-body">We have been to Singapore numerous times as it makes a great stopover destination on the way back home to Oz, but equally is a fun long weekend kind of place as well. There is so much to see and do there, especially given it’s size.
+
+Every time we</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-01-18">18 Jan 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    </div>
+                </div>
+            </section>
+
+    
+    <footer class="gh-footer gh-outer">
+    <div class="gh-footer-inner gh-inner">
+
+        <div class="gh-footer-bar">
+            <span class="gh-footer-logo is-title">
+                    Abandonism
+            </span>
+            <nav class="gh-footer-menu">
+                
+            </nav>
+            <div class="gh-footer-copyright">
+                Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+
+
+    </div>
+</footer>    
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/built/source.js%3Fv=16ea9adc86"></script>
+
+
+
+</body>
+</html>

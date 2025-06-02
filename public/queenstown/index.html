@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Queenstown</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="style" href="../assets/built/screen.css%3Fv=16ea9adc86.css">
+    <link rel="preload" as="script" href="../assets/built/source.js%3Fv=16ea9adc86">
+    
+    <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/inter-roman.woff2%3Fv=16ea9adc86" crossorigin="anonymous">
+<style>
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url(../assets/fonts/inter-roman.woff2%3Fv=16ea9adc86) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css%3Fv=16ea9adc86.css">
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast has been taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+
+        if (accentColor.length === 3) {
+            accentColor = accentColor[0] + accentColor[0] + accentColor[1] + accentColor[1] + accentColor[2] + accentColor[2];
+        }
+
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <link rel="icon" href="../content/images/size/w256h256/2025/06/favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Abandonism">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Queenstown">
+    <meta property="og:description" content="For as long as I can remember, friends and work colleagues have been telling me to get across the Tasman and check out New Zealand. I&#x27;m sad to think it&#x27;s taken me so long! True, I have only been to Queenstown, but if this is any indication of what the">
+    <meta property="og:url" content="http://localhost:2368/queenstown/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2025/06/_MG_5586-36-1.jpg">
+    <meta property="article:published_time" content="2019-09-20T00:00:00.000Z">
+    <meta property="article:modified_time" content="2025-06-01T06:21:08.000Z">
+    <meta property="article:tag" content="New Zealand">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Queenstown">
+    <meta name="twitter:description" content="For as long as I can remember, friends and work colleagues have been telling me to get across the Tasman and check out New Zealand. I&#x27;m sad to think it&#x27;s taken me so long! True, I have only been to Queenstown, but if this is any indication of what the">
+    <meta name="twitter:url" content="http://localhost:2368/queenstown/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2025/06/_MG_5586-36-1.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Abandonism">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="New Zealand">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="533">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Abandonism",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/size/w256h256/2025/06/favicon.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Abandonism",
+        "url": "http://localhost:2368/author/abandonism/",
+        "sameAs": []
+    },
+    "headline": "Queenstown",
+    "url": "http://localhost:2368/queenstown/",
+    "datePublished": "2019-09-20T00:00:00.000Z",
+    "dateModified": "2025-06-01T06:21:08.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2025/06/_MG_5586-36-1.jpg",
+        "width": 800,
+        "height": 533
+    },
+    "keywords": "New Zealand",
+    "description": "For as long as I can remember, friends and work colleagues have been telling me to get across the Tasman and check out New Zealand. I&#x27;m sad to think it&#x27;s taken me so long! True, I have only been to Queenstown, but if this is any indication of what the rest of the country is like we need to get Fran over there ASAP and do a drive across the country. \n\nIn the meantime however, I have been only to Queenstown and I&#x27;m glad we went. Even if you&#x27;re not a great skier like me (and if you are like Mike), ",
+    "mainEntityOfPage": "http://localhost:2368/queenstown/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.107">
+    <link rel="alternate" type="application/rss+xml" title="Abandonism" href="../rss/index.html">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="1117c17940e830e59188f1b078" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="http://localhost:2368/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="http://localhost:2368/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=16ea9adc86"></script><style>:root {--ghost-accent-color: #FF1A75;}</style>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=16ea9adc86.css">
+    <style>
+.gh-article-image {
+    display: none;
+}
+</style>
+
+</head>
+<body class="post-template tag-new-zealand has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+    
+    <header id="gh-navigation" class="gh-navigation is-stacked gh-outer">
+    <div class="gh-navigation-inner gh-inner">
+
+        <div class="gh-navigation-brand">
+            <a class="gh-navigation-logo is-title" href="../index.html">
+                    Abandonism
+            </a>
+            <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>            <button class="gh-burger gh-icon-button" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>            </button>
+        </div>
+
+        <nav class="gh-navigation-menu">
+            <ul class="nav">
+    <li class="nav-home"><a href="../index.html">Home</a></li>
+    <li class="nav-our-story"><a href="../about/index.html">Our Story</a></li>
+    <li class="nav-our-inspiration"><a href="../inspiration/index.html">Our Inspiration</a></li>
+    <li class="nav-abandonism"><a href="http://localhost:2368/abandonism/">Abandonism</a></li>
+    <li class="nav-vehicles"><a href="../tag/vehicle/index.html">Vehicles</a></li>
+</ul>
+
+                    <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>        </nav>
+
+        <div class="gh-navigation-actions">
+        </div>
+
+    </div>
+</header>
+
+    
+
+<main class="gh-main">
+
+    <article class="gh-article post tag-new-zealand">
+
+        <header class="gh-article-header gh-canvas">
+
+                <a class="gh-article-tag" href="../tag/new-zealand/index.html">New Zealand</a>
+            <h1 class="gh-article-title is-title">Queenstown</h1>
+
+            <div class="gh-article-meta">
+                <div class="gh-article-author-image instapaper_ignore">
+                            <a href="../author/abandonism/index.html"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
+</a>
+                </div>
+                <div class="gh-article-meta-wrapper">
+                    <h4 class="gh-article-author-name"><a href="../author/abandonism/index.html">Abandonism</a></h4>
+                    <div class="gh-article-meta-content">
+                        <time class="gh-article-meta-date" datetime="2019-09-20">20 Sep 2019</time>
+                            <span class="gh-article-meta-length"><span class="bull">—</span> 10 min read</span>
+                    </div>
+                </div>
+            </div>
+
+                <figure class="gh-article-image">
+        <img
+            srcset="../content/images/size/w320/2025/06/_MG_5586-36-1.jpg 320w,
+                   ../content/images/size/w600/2025/06/_MG_5586-36-1.jpg 600w,
+                  ../content/images/size/w960/2025/06/_MG_5586-36-1.jpg 960w,
+                 ../content/images/size/w1200/2025/06/_MG_5586-36-1.jpg 1200w,
+                ../content/images/size/w2000/2025/06/_MG_5586-36-1.jpg 2000w"
+            sizes="(max-width: 1200px) 100vw, 1120px"
+            src="../content/images/size/w1200/2025/06/_MG_5586-36-1.jpg"
+            alt="Queenstown"
+        >
+    </figure>
+
+        </header>
+
+        <section class="gh-content gh-canvas is-body">
+            <p>For as long as I can remember, friends and work colleagues have been telling me to get across the Tasman and check out New Zealand. I'm sad to think it's taken me so long! True, I have only been to Queenstown, but if this is any indication of what the rest of the country is like we need to get Fran over there ASAP and do a drive across the country.&nbsp;</p><p>In the meantime however, I have been only to Queenstown and I'm&nbsp;glad we went. Even if you're not a great skier like me (and if you are like Mike), there's so much to do in Queenstown and the surrounds, it's a great introduction to New Zealand regardless of season.&nbsp;</p><p>Probably one thing I was surprised about (and now I'm not sure why) is how touristy the town is. It's not cheap and the service often reflects the fact that it is a tourist hotspot. However the beauty of Lake&nbsp;Wakatipu&nbsp;and the surrounding mountains makes up for it, as does the quality of the food and wine!&nbsp;</p><p>Flying in (and out) of Queenstown is also pretty amazing. We arrived at night time on the way in and couldn't see anything, however flying out over all of the snowcapped mountains was truly incredible.&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190821_122425-66.jpg" class="kg-image" alt="" loading="lazy" width="600" height="800" srcset="../content/images/2025/06/IMG_20190821_122425-66.jpg 600w"></figure><p>&nbsp;</p><h2 id="where-we-stayed">WHERE WE STAYED&nbsp;</h2><p>We stayed at <a href="https://www.lomondlodge.com/?ref=localhost">Lomond Lodge</a>.&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190819_172739-28.jpg" class="kg-image" alt="" loading="lazy" width="800" height="600" srcset="../content/images/size/w600/2025/06/IMG_20190819_172739-28.jpg 600w, ../content/images/2025/06/IMG_20190819_172739-28.jpg 800w" sizes="(min-width: 720px) 720px"></figure><p>The location was really good, close to all amenities&nbsp;and the rooms were nice. Would we stay there again? Probably not. To be fair, in the lead up to the stay, the hotel provided us with some good information. But the service at the Lodge itself was not great, there was rarely anyone in the office who could assist us. We only hired a car for the day, but if you had a car, there is a daily rate for parking. The bed was extremely hot to sleep in and housekeeping was 'opt in' not the usual 'opt out'. Oh, and they had a Nespresso machine there but only provide capsules for the first night of our stay. Strange?! Probably should just remove the machine altogether.&nbsp;&nbsp;</p><p>In short, we knew that Lomond Lodge was mid-budget for Queenstown&nbsp;and our expectations were in check, but due to really bad sleeps and just poor guest experience, I'd opt for somewhere else next time.&nbsp;</p><p>&nbsp;</p><h2 id="where-we-ate">WHERE WE ATE&nbsp;</h2><p>It's a good thing we were in Queenstown for less than a week because the holiday calories were adding up fast with so much good food and drink.&nbsp;</p><p>On the night we arrived we did the mandatory&nbsp;<a href="https://www.fergburger.com/?ref=localhost">Fergburger</a>&nbsp;stop. Unfortunately we didn’t get a photo of our burgers but they were epic! This place is an institution and the burgers are pretty damn good. It's not where you go for a relaxed meal, it's kind of&nbsp;eat&nbsp;and leave which you understand when you see the line out the door.&nbsp;</p><p>Probably the best meal we had in Queenstown was at <a href="https://thefatlamb.co.nz/?ref=localhost">The Fat Lamb</a>. We ordered the roast lamb for two because it seemed the thing to do and we were not disappointed. While it wasn't cheap, there was so much food and the lamb was cooked well, so it was good value. We also made a good attempt at getting through their drinks list 🤭 tasting some great pinot noirs. The staff were very&nbsp;knowledgeable on their menus and probably the best service we received in Queenstown itself.</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190818_192052-17.jpg" width="600" height="800" loading="lazy" alt="" srcset="../content/images/2025/06/IMG_20190818_192052-17.jpg 600w"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190819_220128-30.jpg" width="600" height="800" loading="lazy" alt="" srcset="../content/images/2025/06/IMG_20190819_220128-30.jpg 600w"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190819_223724-31.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190819_223724-31.jpg 600w, ../content/images/2025/06/IMG_20190819_223724-31.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190820_140752-45.jpg" width="600" height="800" loading="lazy" alt="" srcset="../content/images/2025/06/IMG_20190820_140752-45.jpg 600w"></div></div></div></figure><p>The one place we had booked in advance was <a href="https://www.botswanabutchery.co.nz/queenstown/?ref=localhost">Botswana Butchery</a>. I had read some reviews and really just loved the name given our time in Southern Africa.&nbsp;</p><p>Botswana Butchery is located in what appears to be an old style house that looks out onto the lake. As we were there at night and it was dark, a lake view seat wouldn't have been much good anyway, but if I went back, I'd definitely request this.&nbsp;</p><p>Food here was pricey but good. They have some less common meats on their menu so for anyone looking to try something a little bit different, this is definitely the place to do it. They also have a great wine menu!&nbsp;</p><p>Our day in the Otago wine region we lunched at <a href="https://www.gibbstonvalley.com/au/?ref=localhost">Gibbston Valley Wines</a>, ordering their cheese and&nbsp;charcuterie&nbsp;board. We also ordered chips which we really didn't need. There was so much food, all really great quality.&nbsp;</p><p>Where we did less well was on breakfast. We frequented a couple of the cheap bakeries on our snow days but on the other days didn't really come across anything&nbsp;noteworthy&nbsp;(or with great coffee). I'd say there's a good business opportunity in that space for anyone who is keen!&nbsp;</p><p>&nbsp;</p><h2 id="what-we-did">WHAT WE DID&nbsp;</h2><h3 id="out-and-about-in-queenstown">&nbsp;OUT AND ABOUT IN QUEENSTOWN&nbsp;</h3><p>Our first day was spent just wandering around the town itself. We&nbsp;hadn't hired a car at this point and we had a couple of errands to run to prepare for our ski days, so we took the opportunity to just explore the town.&nbsp;</p><p>A lot of the key spots in the town are based around Lake Wakatipu, so we went for a long walk around the lake area, taking in the surrounding mountains and hanging out with the ducks.&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190817_135124-6.jpg" class="kg-image" alt="" loading="lazy" width="800" height="600" srcset="../content/images/size/w600/2025/06/IMG_20190817_135124-6.jpg 600w, ../content/images/2025/06/IMG_20190817_135124-6.jpg 800w" sizes="(min-width: 720px) 720px"></figure><p>In Queenstown Gardens we actually were a little confused by these weird looking contraptions, initially ignoring them but&nbsp;realising&nbsp;later they were for 'Frisbee golf' (or disc golf). If we had worked it out a bit earlier we would have had a go; you can hire the&nbsp;discs for Frisbee golf for $5.00 each from the Queenstown Ice Arena. But by the time we had gone all the way around the gardens we were keen for a coffee.&nbsp;</p><p>Back in town we walked around to the wharf and watched the ferries come in and out. In hindsight we should have jumped on one as I think this would be a nice relaxing way to enjoy the lake, definitely something I would do next time.&nbsp;</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190817_140709-13.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190817_140709-13.jpg 600w, ../content/images/2025/06/IMG_20190817_140709-13.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190819_154140-25.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190819_154140-25.jpg 600w, ../content/images/2025/06/IMG_20190819_154140-25.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190819_152849-24.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190819_152849-24.jpg 600w, ../content/images/2025/06/IMG_20190819_152849-24.jpg 800w" sizes="(min-width: 720px) 720px"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190817_135626-8.jpg" width="600" height="800" loading="lazy" alt="" srcset="../content/images/2025/06/IMG_20190817_135626-8.jpg 600w"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/_MG_5564-2.jpg" width="800" height="533" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/_MG_5564-2.jpg 600w, ../content/images/2025/06/_MG_5564-2.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190817_140621-12.jpg" width="600" height="800" loading="lazy" alt="" srcset="../content/images/2025/06/IMG_20190817_140621-12.jpg 600w"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190817_135118-5.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190817_135118-5.jpg 600w, ../content/images/2025/06/IMG_20190817_135118-5.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190819_155629-26.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190819_155629-26.jpg 600w, ../content/images/2025/06/IMG_20190819_155629-26.jpg 800w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>As we were there on a Saturday, the&nbsp;Creative&nbsp;Queenstown&nbsp;Arts &amp; Crafts&nbsp;Market&nbsp;was on with the perfect waterfront setting, located in/ around&nbsp;Earnslaw&nbsp;Park. It's not a big market but was&nbsp;interesting to look around.&nbsp;</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190817_142741-14.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190817_142741-14.jpg 600w, ../content/images/2025/06/IMG_20190817_142741-14.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190819_155941-27.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190819_155941-27.jpg 600w, ../content/images/2025/06/IMG_20190819_155941-27.jpg 800w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>After we had sorted all of our ski errands we went&nbsp;back to the wharf and settled inside the <a href="https://www.publickitchen.co.nz/?ref=localhost">Public Kitchen and Bar</a> for a quiet drink, so we could warm up, followed up by <a href="http://lodgebar.roddandgunn.com/?ref=localhost">The Lodge Bar</a> for mulled wine.&nbsp;</p><h3 id="skiing">SKIING&nbsp;</h3><p>We skied at Coronet Peak and given I'm not much of&nbsp;a skier it was a bit of a risk scheduling 2 days of skiing at a resort we were not familiar with. All in all it worked out ok, but below I have included a couple of hints/ tips that I would abide by next time.&nbsp;</p><p>Before we left we had booked all of our ski&nbsp;equipment, bus transfers&nbsp;and lift passes through <a href="https://www.infosnow.co.nz/?ref=localhost">Info Snow</a>. It made it easy to do from Australia but didn't come cheap. I think for 2 days we paid&nbsp;AUD765&nbsp;for the 2 of us.&nbsp;&nbsp;</p><p>What we didn't&nbsp;realise&nbsp;until we went to pick everything up, is that basically they are just coordinating it for you. We were handed vouchers for the lift passes and equipment which we then had to go to separate locations to&nbsp;arrange. It did help a little, but not a lot. The bus service is also a once a day return trip, so if you decide to leave a little earlier (which we did on the second day), you need to go through a different bus company and pay.&nbsp;&nbsp;</p><p><em>HINT:</em>&nbsp;If we were to do this again&nbsp;I would hire the equipment in town and go directly through Coronet Peak office to arrange the passes .&nbsp;&nbsp;</p><p><em>HINT:</em>&nbsp;Use the Coronet Peak bus&nbsp;which you can also purchase a ticket for <a href="https://www.coronetpeak.co.nz/transport/?ref=localhost">online</a> or at their Queenstown office. This bus runs every 20 or so minutes in the morning and after 2pm buses run as they fill up. This is good for getting in the morning session and then leaving mid-afternoon if the mountain becomes icy or the weather turns. They also run a hotel pick up service.&nbsp;</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190819_105740-20.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190819_105740-20.jpg 600w, ../content/images/2025/06/IMG_20190819_105740-20.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190819_105749-21.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190819_105749-21.jpg 600w, ../content/images/2025/06/IMG_20190819_105749-21.jpg 800w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>I can definitely see the attraction of Coronet Peak for more seasoned skiers. Plenty of runs at different levels and plenty of space. We were told that the season hadn't been good and that was obvious from the snow machines running in the morning and the ice, but I can imagine that on a good year it would be great skiing.&nbsp;</p><p>As a beginner there was the 'very beginner' area with the mats which was really good to practice on until it got extremely busy (it's not a very large area). There is only really one green run and I found it challenging at my level but Mike enjoyed some of the other runs, again they were just a bit icy.&nbsp;</p><p>In regards to facilities on the mountain, you do have everything you'll need in the way of hire, lockers, plenty of bathrooms and a large canteen area.&nbsp;</p><p><em>HINT:</em>&nbsp;If you're definitely coming back the following day you can pay NZD5 to have them hold your skis overnight which makes the bus&nbsp;so much easier.&nbsp;Cash&nbsp;only though.&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190819_133132-23.jpg" class="kg-image" alt="" loading="lazy" width="800" height="600" srcset="../content/images/size/w600/2025/06/IMG_20190819_133132-23.jpg 600w, ../content/images/2025/06/IMG_20190819_133132-23.jpg 800w" sizes="(min-width: 720px) 720px"></figure><p>I was a bit disappointed that there wasn't really anywhere 'nice' to sit after I'd had enough for the day and Mike wanted to keep going. I had&nbsp;a picture in my head of fireplaces, nice cafes and bars, somewhere to chill out once the lunchtime rush had passed. Coronet Peak doesn't have this, there is space to sit but it's a bit like sitting in a food court.&nbsp;</p><p>In summary, Coronet Peak is great for seasoned skiers and easy to&nbsp;organise&nbsp;from Queenstown.&nbsp;</p><h3 id="otago-wine-region">OTAGO WINE REGION&nbsp;</h3><p>On our last full day in Queenstown we hired a car&nbsp;so we could check out the Otago wine region and surrounds. Unfortunately the weather was not great that day. We&nbsp;drove via&nbsp;Cardrona&nbsp;and later found out that the mountain had been closed for the day due to the weather.&nbsp;&nbsp;</p><p>We drove as far as Lake Wanaka which would have been lovely to spend some time at on the right day, however the blustery wet conditions meant taking a quick couple of pictures and then heading indoors for a hot chocolate.&nbsp;&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190820_121250-40.jpg" class="kg-image" alt="" loading="lazy" width="800" height="600" srcset="../content/images/size/w600/2025/06/IMG_20190820_121250-40.jpg 600w, ../content/images/2025/06/IMG_20190820_121250-40.jpg 800w" sizes="(min-width: 720px) 720px"></figure><p>From there we started to head back south via Otago to check out a bunch of winery recommendations I had been provided with by a colleague, seeing the most AMAZING rainbow on the way.&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190820_124245-41.jpg" class="kg-image" alt="" loading="lazy" width="800" height="600" srcset="../content/images/size/w600/2025/06/IMG_20190820_124245-41.jpg 600w, ../content/images/2025/06/IMG_20190820_124245-41.jpg 800w" sizes="(min-width: 720px) 720px"></figure><p>Our first winery stop was supposed to be Mount Difficulty, however when we got there it was so busy it became all too 'difficult' and we left, deciding to head to Gibbston Valley Wines.&nbsp;</p><p>This is where we ended up having lunch&nbsp;and we were so glad that things worked out the way they did because this winery was awesome. I loved their tasting&nbsp;paddles where you could choose different combinations. Our platter was&nbsp;soooo&nbsp;good and the winery itself was warm and relaxed. They also had a couple of little stores outside which you can check out, one was just for cheese!&nbsp;</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190820_140618-43.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190820_140618-43.jpg 600w, ../content/images/2025/06/IMG_20190820_140618-43.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190820_150533-46.jpg" width="600" height="800" loading="lazy" alt="" srcset="../content/images/2025/06/IMG_20190820_150533-46.jpg 600w"></div></div></div></figure><p>Next up was <a href="https://www.chardfarm.co.nz/?ref=localhost">Chard Farm</a>, a quaint winery in a beautiful farm house structure, very close to a Lord of the Rings filming site.&nbsp;&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190820_154926-50-1.jpg" class="kg-image" alt="" loading="lazy" width="800" height="600" srcset="../content/images/size/w600/2025/06/IMG_20190820_154926-50-1.jpg 600w, ../content/images/2025/06/IMG_20190820_154926-50-1.jpg 800w" sizes="(min-width: 720px) 720px"></figure><p>The wines at Chard Farm were our&nbsp;favourite&nbsp;out of all of the wines we tasted during our Queenstown trip. They were amazing, both their reds and whites and the host was super knowledgeable and lovely to chat with. I only wish we could have brought more wines to take home than we did.&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/_MG_5577-32.jpg" class="kg-image" alt="" loading="lazy" width="800" height="533" srcset="../content/images/size/w600/2025/06/_MG_5577-32.jpg 600w, ../content/images/2025/06/_MG_5577-32.jpg 800w" sizes="(min-width: 720px) 720px"></figure><p>From Chard Farm we headed to our final&nbsp;winery&nbsp;for the day,&nbsp;<a href="https://amisfield.co.nz/?ref=localhost">Amisfield&nbsp;Winery</a>, another stunning venue with views of the mountains behind it. After a brief tasting we sat down inside for a drink near the fire, which was lovely, but I can imagine on a beautiful sunny day sitting outside at the back of the winery enjoying a glass of white while taking in those views.&nbsp;&nbsp;</p><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190820_160452-51.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190820_160452-51.jpg 600w, ../content/images/2025/06/IMG_20190820_160452-51.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190820_160528-52.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190820_160528-52.jpg 600w, ../content/images/2025/06/IMG_20190820_160528-52.jpg 800w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="../content/images/2025/06/IMG_20190820_163320-53.jpg" width="800" height="600" loading="lazy" alt="" srcset="../content/images/size/w600/2025/06/IMG_20190820_163320-53.jpg 600w, ../content/images/2025/06/IMG_20190820_163320-53.jpg 800w" sizes="(min-width: 720px) 720px"></div></div></div></figure><p>Back in town, before dropping the car off, we drove a little way around Lake&nbsp;Wakatipu to capture the sunset. Again, just stunning.&nbsp;</p><h2 id="wrap-up">WRAP UP</h2><p>As you can see, we really enjoyed our time in Queenstown and surrounds and we got a good taste of what the area is known for. Queenstown is expensive and a very touristy area. That said I would still love to come back in the warmer months and do a hike or two and maybe explore New Zealand a bit further. Just got to work out how we can get Fran there!&nbsp;</p><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190820_181245-64.jpg" class="kg-image" alt="" loading="lazy" width="800" height="600" srcset="../content/images/size/w600/2025/06/IMG_20190820_181245-64.jpg 600w, ../content/images/2025/06/IMG_20190820_181245-64.jpg 800w" sizes="(min-width: 720px) 720px"></figure><figure class="kg-card kg-image-card"><img src="../content/images/2025/06/IMG_20190820_180915-61.jpg" class="kg-image" alt="" loading="lazy" width="800" height="600" srcset="../content/images/size/w600/2025/06/IMG_20190820_180915-61.jpg 600w, ../content/images/2025/06/IMG_20190820_180915-61.jpg 800w" sizes="(min-width: 720px) 720px"></figure>
+        </section>
+
+    </article>
+
+
+</main>
+
+
+            <section class="gh-container is-grid gh-outer">
+                <div class="gh-container-inner gh-inner">
+                    <h2 class="gh-container-title">Read more</h2>
+                    <div class="gh-feed">
+                            <article class="gh-card post featured">
+    <a class="gh-card-link" href="../egypt/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="../content/images/size/w160/format/webp/2025/05/_MG_5768-1.jpg 160w,
+                           ../content/images/size/w320/format/webp/2025/05/_MG_5768-1.jpg 320w,
+                          ../content/images/size/w600/format/webp/2025/05/_MG_5768-1.jpg 600w,
+                         ../content/images/size/w960/format/webp/2025/05/_MG_5768-1.jpg 960w,
+                        ../content/images/size/w1200/format/webp/2025/05/_MG_5768-1.jpg 1200w,
+                       ../content/images/size/w2000/format/webp/2025/05/_MG_5768-1.jpg 2000w"
+                    sizes="320px"
+                    src="../content/images/size/w600/2025/05/_MG_5768-1.jpg"
+                    alt="Egypt"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Egypt</h3>
+                    <p class="gh-card-excerpt is-body">I know I refer to a lot of places we visit as being ‘on the list’. But if we were to talk true bucket list destinations then Egypt has to have been at the top of that list.
+
+About 3-4 years ago we looked at Egypt and seriously considered going,</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-04-12">12 Apr 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../central-australia-road-trip-pt-2-alice-springs-the-long-trip-home/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="../content/images/size/w160/format/webp/2025/06/IMG_2118-1.jpg 160w,
+                           ../content/images/size/w320/format/webp/2025/06/IMG_2118-1.jpg 320w,
+                          ../content/images/size/w600/format/webp/2025/06/IMG_2118-1.jpg 600w,
+                         ../content/images/size/w960/format/webp/2025/06/IMG_2118-1.jpg 960w,
+                        ../content/images/size/w1200/format/webp/2025/06/IMG_2118-1.jpg 1200w,
+                       ../content/images/size/w2000/format/webp/2025/06/IMG_2118-1.jpg 2000w"
+                    sizes="320px"
+                    src="../content/images/size/w600/2025/06/IMG_2118-1.jpg"
+                    alt="Central Australia Road Trip (Pt.2): Alice Springs &amp; the long trip home"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Central Australia Road Trip (Pt.2): Alice Springs &amp; the long trip home</h3>
+                    <p class="gh-card-excerpt is-body">As alluded to in part one of our Central Australia trip post, the second half of our drive underwent a major change. Our original itinerary had us heading to Alice Springs and then further north before turning back east on a scenic journey back to Sydney. However a combination of</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-02-01">01 Feb 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../central-australia-road-trip-pt-1-broken-hill-coober-pedy-uluru/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="../content/images/size/w160/format/webp/2025/06/IMG_1971-1.jpg 160w,
+                           ../content/images/size/w320/format/webp/2025/06/IMG_1971-1.jpg 320w,
+                          ../content/images/size/w600/format/webp/2025/06/IMG_1971-1.jpg 600w,
+                         ../content/images/size/w960/format/webp/2025/06/IMG_1971-1.jpg 960w,
+                        ../content/images/size/w1200/format/webp/2025/06/IMG_1971-1.jpg 1200w,
+                       ../content/images/size/w2000/format/webp/2025/06/IMG_1971-1.jpg 2000w"
+                    sizes="320px"
+                    src="../content/images/size/w600/2025/06/IMG_1971-1.jpg"
+                    alt="Central Australia Road Trip (Pt.1): Broken Hill, Coober Pedy &amp; Uluru"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Central Australia Road Trip (Pt.1): Broken Hill, Coober Pedy &amp; Uluru</h3>
+                    <p class="gh-card-excerpt is-body">Central Australia is a trip we had talked about forever and the purchase of Fran made us all the more eager to get out there and explore it.
+
+Normally we spend our Christmas and New Year in Melbourne with family and friends however with forced leave from work we decided</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-02-01">01 Feb 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../ten-things-to-do-in-singapore/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="../content/images/size/w160/format/webp/2025/06/IMG_1526-2.jpg 160w,
+                           ../content/images/size/w320/format/webp/2025/06/IMG_1526-2.jpg 320w,
+                          ../content/images/size/w600/format/webp/2025/06/IMG_1526-2.jpg 600w,
+                         ../content/images/size/w960/format/webp/2025/06/IMG_1526-2.jpg 960w,
+                        ../content/images/size/w1200/format/webp/2025/06/IMG_1526-2.jpg 1200w,
+                       ../content/images/size/w2000/format/webp/2025/06/IMG_1526-2.jpg 2000w"
+                    sizes="320px"
+                    src="../content/images/size/w600/2025/06/IMG_1526-2.jpg"
+                    alt="Ten things to do in Singapore"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Ten things to do in Singapore</h3>
+                    <p class="gh-card-excerpt is-body">We have been to Singapore numerous times as it makes a great stopover destination on the way back home to Oz, but equally is a fun long weekend kind of place as well. There is so much to see and do there, especially given it’s size.
+
+Every time we</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-01-18">18 Jan 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    </div>
+                </div>
+            </section>
+
+    
+    <footer class="gh-footer gh-outer">
+    <div class="gh-footer-inner gh-inner">
+
+        <div class="gh-footer-bar">
+            <span class="gh-footer-logo is-title">
+                    Abandonism
+            </span>
+            <nav class="gh-footer-menu">
+                
+            </nav>
+            <div class="gh-footer-copyright">
+                Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+
+
+    </div>
+</footer>    
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/built/source.js%3Fv=16ea9adc86"></script>
+
+
+
+</body>
+</html>

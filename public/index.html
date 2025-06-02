@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Abandonism</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="style" href="assets/built/screen.css%3Fv=16ea9adc86.css">
+    <link rel="preload" as="script" href="assets/built/source.js%3Fv=16ea9adc86">
+    
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-roman.woff2%3Fv=16ea9adc86" crossorigin="anonymous">
+<style>
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url(assets/fonts/inter-roman.woff2%3Fv=16ea9adc86) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+
+    <link rel="stylesheet" type="text/css" href="assets/built/screen.css%3Fv=16ea9adc86.css">
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast has been taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+
+        if (accentColor.length === 3) {
+            accentColor = accentColor[0] + accentColor[0] + accentColor[1] + accentColor[1] + accentColor[2] + accentColor[2];
+        }
+
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <meta name="description" content="Travel blog encouraging others to abandon the monotony of life and explore the world">
+    <link rel="icon" href="content/images/size/w256h256/2025/06/favicon.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="page/2.html">
+    
+    <meta property="og:site_name" content="Abandonism">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abandonism">
+    <meta property="og:description" content="Travel blog encouraging others to abandon the monotony of life and explore the world">
+    <meta property="og:url" content="http://localhost:2368/">
+    <meta property="og:image" content="https://static.ghost.org/v5.0.0/images/publication-cover.jpg">
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abandonism">
+    <meta name="twitter:description" content="Travel blog encouraging others to abandon the monotony of life and explore the world">
+    <meta name="twitter:url" content="http://localhost:2368/">
+    <meta name="twitter:image" content="https://static.ghost.org/v5.0.0/images/publication-cover.jpg">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="840">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Abandonism",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/size/w256h256/2025/06/favicon.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "url": "http://localhost:2368/",
+    "name": "Abandonism",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+        "width": 1200,
+        "height": 840
+    },
+    "mainEntityOfPage": "http://localhost:2368/",
+    "description": "Travel blog encouraging others to abandon the monotony of life and explore the world"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.107">
+    <link rel="alternate" type="application/rss+xml" title="Abandonism" href="rss/index.html">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="1117c17940e830e59188f1b078" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="http://localhost:2368/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="http://localhost:2368/webmentions/receive/" rel="webmention">
+    <script defer src="public/cards.min.js%3Fv=16ea9adc86"></script><style>:root {--ghost-accent-color: #FF1A75;}</style>
+    <link rel="stylesheet" type="text/css" href="public/cards.min.css%3Fv=16ea9adc86.css">
+    <style>
+.gh-article-image {
+    display: none;
+}
+</style>
+
+</head>
+<body class="home-template has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+    
+    <header id="gh-navigation" class="gh-navigation is-stacked gh-outer">
+    <div class="gh-navigation-inner gh-inner">
+
+        <div class="gh-navigation-brand">
+            <a class="gh-navigation-logo is-title" href="index.html">
+                    Abandonism
+            </a>
+            <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>            <button class="gh-burger gh-icon-button" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>            </button>
+        </div>
+
+        <nav class="gh-navigation-menu">
+            <ul class="nav">
+    <li class="nav-home nav-current"><a href="index.html">Home</a></li>
+    <li class="nav-our-story"><a href="about/index.html">Our Story</a></li>
+    <li class="nav-our-inspiration"><a href="inspiration/index.html">Our Inspiration</a></li>
+    <li class="nav-abandonism"><a href="http://localhost:2368/abandonism/">Abandonism</a></li>
+    <li class="nav-vehicles"><a href="tag/vehicle/index.html">Vehicles</a></li>
+</ul>
+
+                    <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>        </nav>
+
+        <div class="gh-navigation-actions">
+        </div>
+
+    </div>
+</header>
+
+    
+
+        <section class="gh-header is-highlight has-image gh-outer">
+
+
+    <div class="gh-header-inner gh-inner">
+
+            <div class="gh-header-left">
+                    <article class="gh-card post tag-egypt featured">
+    <a class="gh-card-link" href="egypt/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/05/_MG_5768-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/05/_MG_5768-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/05/_MG_5768-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/05/_MG_5768-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/05/_MG_5768-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/05/_MG_5768-1.jpg 2000w"
+                    sizes="(max-width: 767px) calc(100vw - max(8vmin, 40px)), 640px"
+                    src="content/images/size/w600/2025/05/_MG_5768-1.jpg"
+                    alt="Egypt"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Egypt</p>
+            <h3 class="gh-card-title is-title">Egypt</h3>
+                    <p class="gh-card-excerpt is-body">I know I refer to a lot of places we visit as being ‘on the list’. But if we were to talk true bucket list destinations then Egypt has to have been at the top of that list.
+
+About 3-4 years ago we looked at Egypt and seriously considered going,</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-04-12">12 Apr 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+            </div>
+            <div class="gh-header-middle">
+                    <article class="gh-card post tag-australia">
+    <a class="gh-card-link" href="central-australia-road-trip-pt-2-alice-springs-the-long-trip-home/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_2118-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_2118-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_2118-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_2118-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_2118-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_2118-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/IMG_2118-1.jpg"
+                    alt="Central Australia Road Trip (Pt.2): Alice Springs &amp; the long trip home"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Australia</p>
+            <h3 class="gh-card-title is-title">Central Australia Road Trip (Pt.2): Alice Springs &amp; the long trip home</h3>
+                    <p class="gh-card-excerpt is-body">As alluded to in part one of our Central Australia trip post, the second half of our drive underwent a major change. Our original itinerary had us heading to Alice Springs and then further north before turning back east on a scenic journey back to Sydney. However a combination of</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-02-01">01 Feb 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    <article class="gh-card post tag-australia">
+    <a class="gh-card-link" href="central-australia-road-trip-pt-1-broken-hill-coober-pedy-uluru/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_1971-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_1971-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_1971-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_1971-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_1971-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_1971-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/IMG_1971-1.jpg"
+                    alt="Central Australia Road Trip (Pt.1): Broken Hill, Coober Pedy &amp; Uluru"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Australia</p>
+            <h3 class="gh-card-title is-title">Central Australia Road Trip (Pt.1): Broken Hill, Coober Pedy &amp; Uluru</h3>
+                    <p class="gh-card-excerpt is-body">Central Australia is a trip we had talked about forever and the purchase of Fran made us all the more eager to get out there and explore it.
+
+Normally we spend our Christmas and New Year in Melbourne with family and friends however with forced leave from work we decided</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-02-01">01 Feb 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    <article class="gh-card post tag-singapore">
+    <a class="gh-card-link" href="ten-things-to-do-in-singapore/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_1526-2.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_1526-2.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_1526-2.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_1526-2.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_1526-2.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_1526-2.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/IMG_1526-2.jpg"
+                    alt="Ten things to do in Singapore"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Singapore</p>
+            <h3 class="gh-card-title is-title">Ten things to do in Singapore</h3>
+                    <p class="gh-card-excerpt is-body">We have been to Singapore numerous times as it makes a great stopover destination on the way back home to Oz, but equally is a fun long weekend kind of place as well. There is so much to see and do there, especially given it’s size.
+
+Every time we</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2020-01-18">18 Jan 2020</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+            </div>
+            <div class="gh-header-right">
+                    <div class="gh-featured-feed">
+                            <article class="gh-card post tag-cambodia">
+    <a class="gh-card-link" href="siem-reap/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/_MG_5628-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/_MG_5628-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/_MG_5628-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/_MG_5628-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/_MG_5628-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/_MG_5628-1.jpg 2000w"
+                    sizes="80px"
+                    src="content/images/size/w600/2025/06/_MG_5628-1.jpg"
+                    alt="Siem Reap"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Cambodia</p>
+            <h3 class="gh-card-title is-title">Siem Reap</h3>
+                    <p class="gh-card-excerpt is-body">Cambodia, and more specifically Angkor Wat, had been on my bucket list for quite some time. I’m not too sure why we didn’t get there earlier but I’m certainly glad we have been there now.
+
+Cambodia is an amazing country. From the history and monuments, to the</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-12-19">19 Dec 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-cambodia">
+    <a class="gh-card-link" href="phnom-penh/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_20191106_183732-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_20191106_183732-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_20191106_183732-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_20191106_183732-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_20191106_183732-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_20191106_183732-1.jpg 2000w"
+                    sizes="80px"
+                    src="content/images/size/w600/2025/06/IMG_20191106_183732-1.jpg"
+                    alt="Phnom Penh"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Cambodia</p>
+            <h3 class="gh-card-title is-title">Phnom Penh</h3>
+                    <p class="gh-card-excerpt is-body">Phnom Penh is a vibrant and bustling city. We went there for a 3 night visit after our time in Siem Reap and were pleasantly surprised at how cosmopolitan it is all the while retaining the energy of a South-East Asian capital city.
+
+
+HOW WE GOT THERE
+
+This a heading</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-12-19">19 Dec 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-new-zealand">
+    <a class="gh-card-link" href="queenstown/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/_MG_5586-36-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/_MG_5586-36-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/_MG_5586-36-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/_MG_5586-36-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/_MG_5586-36-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/_MG_5586-36-1.jpg 2000w"
+                    sizes="80px"
+                    src="content/images/size/w600/2025/06/_MG_5586-36-1.jpg"
+                    alt="Queenstown"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">New Zealand</p>
+            <h3 class="gh-card-title is-title">Queenstown</h3>
+                    <p class="gh-card-excerpt is-body">For as long as I can remember, friends and work colleagues have been telling me to get across the Tasman and check out New Zealand. I&#39;m sad to think it&#39;s taken me so long! True, I have only been to Queenstown, but if this is any</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-09-20">20 Sep 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-australia">
+    <a class="gh-card-link" href="ten-things-to-do-in-canberra/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_20180609_170613-4.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_20180609_170613-4.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_20180609_170613-4.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_20180609_170613-4.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_20180609_170613-4.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_20180609_170613-4.jpg 2000w"
+                    sizes="80px"
+                    src="content/images/size/w600/2025/06/IMG_20180609_170613-4.jpg"
+                    alt="Ten things to do in Canberra"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Australia</p>
+            <h3 class="gh-card-title is-title">Ten things to do in Canberra</h3>
+                    <p class="gh-card-excerpt is-body">To get through this list you will probably need a long weekend, or maybe a couple of Canberra weekend visits. The nation&#39;s capital isn&#39;t short of things to do and see, with something for everyone and for every season. Below are ten of our favourites, in</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-07-07">07 Jul 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-australia">
+    <a class="gh-card-link" href="canberra-long-weekend/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_20190609_133350-27.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_20190609_133350-27.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_20190609_133350-27.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_20190609_133350-27.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_20190609_133350-27.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_20190609_133350-27.jpg 2000w"
+                    sizes="80px"
+                    src="content/images/size/w600/2025/06/IMG_20190609_133350-27.jpg"
+                    alt="Canberra long weekend"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Australia</p>
+            <h3 class="gh-card-title is-title">Canberra long weekend</h3>
+                    <p class="gh-card-excerpt is-body">We’ve been to Canberra a few times now for long weekends and we’re never disappointed with the amount of things to do, regardless of the season in which we visit. Canberra is great for Sydney siders looking to escape the hustle and bustle of the city but not</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-06-16">16 Jun 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post tag-australia">
+    <a class="gh-card-link" href="adelaide-the-adelaide-hills/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_20190526_114909-01-01-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_20190526_114909-01-01-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_20190526_114909-01-01-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_20190526_114909-01-01-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_20190526_114909-01-01-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_20190526_114909-01-01-1.jpg 2000w"
+                    sizes="80px"
+                    src="content/images/size/w600/2025/06/IMG_20190526_114909-01-01-1.jpg"
+                    alt="Adelaide &amp; the Adelaide Hills"
+                    
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+                <p class="gh-card-tag">Australia</p>
+            <h3 class="gh-card-title is-title">Adelaide &amp; the Adelaide Hills</h3>
+                    <p class="gh-card-excerpt is-body">After being back at work for almost a month we decided to take a long weekend and head to South Australia for some great wine and food!
+
+This was our second time in South Australia, more specifically Adelaide and the the Adelaide Hills. We used this trip to revisit some</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-05-29">29 May 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    </div>
+            </div>
+
+
+
+
+    </div>
+
+</section>
+
+
+
+
+<section class="gh-container is-grid gh-outer">
+    <div class="gh-container-inner gh-inner">
+        
+            <h2 class="gh-container-title">
+                Latest
+            </h2>
+
+        <main class="gh-main">
+            <div class="gh-feed">
+
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="kruger-national-park/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/_MG_5298-191-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/_MG_5298-191-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/_MG_5298-191-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/_MG_5298-191-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/_MG_5298-191-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/_MG_5298-191-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/_MG_5298-191-1.jpg"
+                    alt="Kruger National Park"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Kruger National Park</h3>
+                    <p class="gh-card-excerpt is-body">No trip to South Africa is complete with out safari!
+
+There are lots of great national parks in South Africa, some run by SAN Parks, some private reserves; probably the most famous though is Kruger National Park.
+
+We drove to Kruger from Johannesburg Airport, heading for the Paul Kruger gate</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-05-19">19 May 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="stellenbosch-cape-town/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_20190420_114823-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_20190420_114823-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_20190420_114823-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_20190420_114823-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_20190420_114823-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_20190420_114823-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/IMG_20190420_114823-1.jpg"
+                    alt="Stellenbosch &amp; Cape Town"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Stellenbosch &amp; Cape Town</h3>
+                    <p class="gh-card-excerpt is-body">Stellenbosch
+
+Stellenbosch is a beautiful town located 45 minutes from Cape Town and surrounded by the vineyards of the Cape Winelands. The town architecture is a reminder of South Africa’s Dutch colonial history with white painted buildings and timber edgings, the streets lined with large oak trees and filled</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-05-12">12 May 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="addo-elephant-np-driving-the-garden-route/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/_MG_4875-01-44-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/_MG_4875-01-44-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/_MG_4875-01-44-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/_MG_4875-01-44-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/_MG_4875-01-44-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/_MG_4875-01-44-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/_MG_4875-01-44-1.jpg"
+                    alt="Addo Elephant NP &amp; Driving the Garden Route"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Addo Elephant NP &amp; Driving the Garden Route</h3>
+                    <p class="gh-card-excerpt is-body">Following our time in Durban we headed to the city of Port Elizabeth (PE).
+
+Originally we had planned to stay for the night in PE but had been told about Addo Elephant Park by our friends in Durban. Given it was only an hour or so away we decided to</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-05-06">06 May 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="durban-including-sani-pass-visit/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_20190412_135713-38-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_20190412_135713-38-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_20190412_135713-38-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_20190412_135713-38-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_20190412_135713-38-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_20190412_135713-38-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/IMG_20190412_135713-38-1.jpg"
+                    alt="Durban (Including Sani Pass visit)"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Durban (Including Sani Pass visit)</h3>
+                    <p class="gh-card-excerpt is-body">We’ve made a few trips to South Africa now, but this was our very first time visiting Durban and we were super excited! One of our reasons for this trip, and more specifically Durban, was to visit friends that we had made from our time in Zambia. We hadn’</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-05-05">05 May 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="the-blue-mountains/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/_MG_4777-5-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/_MG_4777-5-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/_MG_4777-5-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/_MG_4777-5-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/_MG_4777-5-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/_MG_4777-5-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/_MG_4777-5-1.jpg"
+                    alt="The Blue Mountains"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">The Blue Mountains</h3>
+                    <p class="gh-card-excerpt is-body">Recently we made a quick overnight trip to Katoomba and the Blue Mountains. I’m not sure how we managed it, but I’m pretty sure we picked the first real ‘wintery’ weekend and weather they’d had up there for the year. It was freezing! And for some reason,</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-04-11">11 Apr 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="weekend-in-jervis-bay/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_0816-2-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_0816-2-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_0816-2-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_0816-2-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_0816-2-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_0816-2-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/IMG_0816-2-1.jpg"
+                    alt="Weekend in Jervis Bay"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Weekend in Jervis Bay</h3>
+                    <p class="gh-card-excerpt is-body">March’s mild weather called for a weekend visit down to Jervis Bay on the NSW south coast.
+
+This was the first time either of us had been to Jervis Bay after hearing so much about it, and while very pretty, as had been promised, was much less developed than</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-04-03">03 Apr 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="fran-the-next-generation/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/image-asset_1-1.jpeg 160w,
+                           content/images/size/w320/format/webp/2025/06/image-asset_1-1.jpeg 320w,
+                          content/images/size/w600/format/webp/2025/06/image-asset_1-1.jpegeg 600w,
+                         content/images/size/w960/format/webp/2025/06/image-asset_1-1.jpeg 960w,
+                        content/images/size/w1200/format/webp/2025/06/image-asset_1-1.jpeg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/image-asset_1-1.jpeg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/image-asset_1-1.jpeg"
+                    alt="Fran - The next generation"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Fran - The next generation</h3>
+                    <p class="gh-card-excerpt is-body">Fran is a 2006 Toyota Landcruiser HDJ78 Troopcarrier with the full Alu-Cab Hercules roof conversion. She has the last of the solid straight-6 turbo diesel Toyota engines, the 1HD-FTE, with minimal electronics for maximum reliability. We had been watching the rare 1HD-FTE powered troopies for a long time and when</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-03-27">27 Mar 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="ruth-the-original/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/_MG_0655_1-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/_MG_0655_1-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/_MG_0655_1-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/_MG_0655_1-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/_MG_0655_1-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/_MG_0655_1-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/_MG_0655_1-1.jpg"
+                    alt="Ruth - The original"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Ruth - The original</h3>
+                    <p class="gh-card-excerpt is-body">Ruth was a 1994 Toyota Landcruiser Prado KZJ78 was imported from Japan into Zambia in 2005 by an American Embassy worker who owned the car until 2009. It was subsequently purchased by an Australian VSO Volunteer who owned the car for 18 months before selling it to us in November</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-03-26">26 Mar 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="torquay/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_20181229_122225-4-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_20181229_122225-4-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_20181229_122225-4-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_20181229_122225-4-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_20181229_122225-4-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_20181229_122225-4-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/IMG_20181229_122225-4-1.jpg"
+                    alt="Torquay"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Torquay</h3>
+                    <p class="gh-card-excerpt is-body">Earlier this year while in Melbourne to see family and friends, we decided to take some time out and be tourists in our old town, heading to a favourite place, Torquay.
+
+Torquay is located on the south- west coast of Victoria and is well known for its surf beach, including</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-03-13">13 Mar 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="rwanda-uganda/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/_MG_3514-3-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/_MG_3514-3-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/_MG_3514-3-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/_MG_3514-3-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/_MG_3514-3-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/_MG_3514-3-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/_MG_3514-3-1.jpg"
+                    alt="Rwanda &amp; Uganda"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Rwanda &amp; Uganda</h3>
+                    <p class="gh-card-excerpt is-body">Rwanda
+
+One of the most amazing countries we visited in Africa. Yes, it is amazing because of the lush green hills, tea plantations and of course, the mountain gorillas. But I found it amazing because we were there less than 20 years after the 1994 genocide and the country felt</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-01-24">24 Jan 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="tanzania-including-zanzibar/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/_MG_3098-25-1.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/_MG_3098-25-1.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/_MG_3098-25-1.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/_MG_3098-25-1.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/_MG_3098-25-1.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/_MG_3098-25-1.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/_MG_3098-25-1.jpg"
+                    alt="Tanzania (Including Zanzibar)"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Tanzania (Including Zanzibar)</h3>
+                    <p class="gh-card-excerpt is-body">This post could go forever, Tanzania is a huge country with a ton of very famous tourist sites and just cool stuff to see and do.
+
+Mount Kilimanjaro, Zanzibar, Serengeti, Ngorongoro Crater and more!
+
+We spent about 6 weeks there all up and pretty much followed the tourist trail. If</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-01-24">24 Jan 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                                        <article class="gh-card post">
+    <a class="gh-card-link" href="south-africa-zimbabwe/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="content/images/size/w160/format/webp/2025/06/IMG_3837-8.jpg 160w,
+                           content/images/size/w320/format/webp/2025/06/IMG_3837-8.jpg 320w,
+                          content/images/size/w600/format/webp/2025/06/IMG_3837-8.jpg 600w,
+                         content/images/size/w960/format/webp/2025/06/IMG_3837-8.jpg 960w,
+                        content/images/size/w1200/format/webp/2025/06/IMG_3837-8.jpg 1200w,
+                       content/images/size/w2000/format/webp/2025/06/IMG_3837-8.jpg 2000w"
+                    sizes="320px"
+                    src="content/images/size/w600/2025/06/IMG_3837-8.jpg"
+                    alt="South Africa &amp; Zimbabwe"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">South Africa &amp; Zimbabwe</h3>
+                    <p class="gh-card-excerpt is-body">South Africa
+
+South Africa is a country I will keep coming back to; it has so much to see and do, every trip is different from the last. During our time in Zambia we managed to get down to South Africa only the one time for a couple of weeks,</p>
+            <footer class="gh-card-meta">
+<!--
+             -->                    <time class="gh-card-date" datetime="2019-01-24">24 Jan 2019</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+
+
+
+            </div>
+
+                <div class="gh-more is-title">
+                    <a href="page/2.html">See all <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></a>
+                </div>
+        </main>
+
+
+    </div>
+</section>
+    
+    <footer class="gh-footer gh-outer">
+    <div class="gh-footer-inner gh-inner">
+
+        <div class="gh-footer-bar">
+            <span class="gh-footer-logo is-title">
+                    Abandonism
+            </span>
+            <nav class="gh-footer-menu">
+                
+            </nav>
+            <div class="gh-footer-copyright">
+                Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+
+
+    </div>
+</footer>    
+</div>
+
+
+<script src="assets/built/source.js%3Fv=16ea9adc86"></script>
+
+
+
+</body>
+</html>
