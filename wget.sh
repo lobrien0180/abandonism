@@ -26,3 +26,6 @@ find ./docs/ -type f -name '*.html' | xargs sed -i '' -e 's#\.jpeg\.jpeg#.jpeg#g
 find ./docs/ -type f -name '*.html' | xargs sed -i '' -e 's#.pngg#.png#g'
 find ./docs/ -type f -name '*.html' | xargs sed -i '' -e 's#.pngng#.png#g'
 find ./docs/ -type f -name '*.html' | xargs sed -i '' -e 's#.pngpng#.png#g'
+
+# add .nojekyll
+touch ./docs/.nojekyll
